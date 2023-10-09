@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 200vh;
+}
+.breadcrumbs {
+  display: flex;
+  position: absolute;
+  margin-top: 3rem;
+}
+.alur {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  z-index: 999999;
+  width: 1400px;
+  border-bottom: 3px solid white;
+  position: fixed;
+  background-color: white;
+  padding-top: 20px;
+  padding-left: 130px;
+}
+.alur a {
+  text-decoration: none;
+  color: black;
+}
+.hero {
+  background-image: url(../gambarcard/rokok.jpg);
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+#konten {
+  width: 1400px;
+  background-color: wheat;
+  position: absolute;
+  top: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#konten p {
+  width: 80%;
+  margin-top: 10px;
+}

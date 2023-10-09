@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+html {
+  overflow-x: hidden;
+  background-color: aliceblue;
+  font-size: 19px;
+}
+.kontener {
+  width: 200%;
+  height: 100vh;
+  display: flex;
+  background: #f7f7f7;
+}
+#banner {
+  position: relative;
+  height: 100%;
+  background: whitesmoke;
+  margin-bottom: 5rem;
+}
+#banner::before {
+  position: absolute;
+  content: "";
+  height: 500px;
+  width: 550px;
+  border-radius: 50%;
+  left: -12%;
+  top: 20%;
+  background-color: aqua;
+  background: linear-gradient(to top right, aqua, #acdbe4);
+  animation: bunder 4s linear infinite;
+}
+#banner::after {
+  position: absolute;
+  content: "";
+  height: 190px;
+  width: 190px;
+  border-radius: 50%;
+  left: 35%;
+  top: 5%;
+  background: linear-gradient(aqua, #acdbe4);
+  animation: bunder2 4s linear infinite;
+}
+@keyframes bunder {
+  50% {
+    left: -8%;
+    top: 17%;
+  }
+}
+@keyframes bunder2 {
+  50% {
+    left: 34%;
+    top: 10%;
+  }
+}
+.cols {
+  z-index: 5;
+}
+.topline {
+  display: block;
+  position: relative;
+  font-size: 25px;
+  color: #2d8a8a;
+}
+.topline::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 45px;
+  bottom: 0px;
+  background-color: aqua;
+}
+.oi {
+  font-size: 50px;
+  font-weight: 900;
+  color: #3d535f;
+}
+.multi {
+  color: aqua;
+  text-transform: capitalize;
+}
+.ajojing {
+  width: 90%;
+  font-size: 19px;
+  color: #3d535f;
+}
+.foto #bg {
+  position: absolute;
+  right: 20%;
+  bottom: 15%;
+}
+section {
+  margin-top: 5rem;
+}
+#footer {
+  height: 100vh;
+  padding-top: 10rem;
+}
+#panel {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+}
+.kontener .panel:nth-child(odd) {
+  background: #fff;
+}
+.bunder {
+  position: absolute;
+  top: 60%;
+  left: -5%;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: linear-gradient(to top left, aqua, #acdbe4);
+  animation: bunder3 4s linear infinite;
+}
+@keyframes bunder3 {
+  50% {
+    top: 57%;
+    left: -3%;
+  }
+}
+.icon {
+  font-size: 40px;
+}
+.icon a {
+  color: black;
+  margin-left: 9px;
+}
+.warna {
+  color: aqua;
+}
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 2px 35px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+.konten {
+  width: 950px;
+}
+#gallery {
+  background-color: wheat;
+}
+.galeri {
+  width: 80%;
+  columns: 3;
+  column-gap: 10px;
+  padding: 100px 0;
+  margin: auto;
+}
+.galeri .box {
+  width: 97%;
+  margin-bottom: 25px;
+  break-inside: avoid;
+  margin-left: 10px;
+}
+.galeri .box img {
+  max-width: 100%;
+  border-radius: 15px;
+  transition: transform 0.5s;
+}
+.galeri .box img:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+/* @media (max-width: 768px) {
+  #banner::before,
+  #banner::after {
+    display: none; 
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .foto {
+    order: 2; //merubah urutan foto dadi seng ke 2
+  }
+
+  .op {
+    z-index: 5;
+  }
+  .multi {
+    font-size: 32px;
+  }
+  .oi {
+    font-size: 33px;
+  }
+  .topline {
+    font-size: 20px;
+  }
+  .ajojing {
+    font-size: 17px;
+  }
+  .foto img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10rem;
+  }
+  .icon a {
+    color: white;
+  }
+
+  .galeri {
+    margin-top: 50rem;
+    width: 100%;
+    columns: 1;
+  }
+  .bajol {
+    margin-right: -30rem;
+  }
+  .text {
+    margin-right: -47rem;
+  }
+  .owl-carousel .card {
+    display: none;
+  }
+} */
+.footer p {
+  padding: 30px;
+  width: 100%;
+  background-color: hotpink;
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+}
